@@ -6,19 +6,29 @@
 using namespace std;
 
 int main() {
-    int a, b, c;
+    int a, b;
 
-    cout << "Enter No. for a: ";
+    cout << "Enter the first number: ";
     cin >> a;
-    cout << "Enter No. for b: ";
+    cout << "Enter the second number: ";
     cin >> b;
 
-    c = a + b;
-    cout << "The sum is: " << c << endl;
+    int sum = a + b;
+    int difference = a - b;
+    int product = a * b;
+    int quotient = a / b; // Note: This will cause a runtime error if b is 0
+
+    cout << "Sum: " << sum << endl;
+    cout << "Difference: " << difference << endl;
+    cout << "Product: " << product << endl;
+    cout << "Quotient: " << quotient << endl;
 
     return 0;
 }
 //output
-//Enter No. for a: 65
-//Enter No. for b: 79
-//The sum is: 144
+//Enter the first number: 56
+//Enter the second number: 7
+//Sum: 63
+//Difference: 49
+//Product: 392
+//Quotient: 8
